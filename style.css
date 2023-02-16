@@ -1,0 +1,205 @@
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+
+
+body {
+    margin: 0;
+}
+
+header,
+footer {
+    background-color: bisque;
+}
+
+.menubar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+    padding: 0 20px;
+}
+
+.group-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.group-info p {
+    width: 50%;
+}
+
+.group-info h1 {
+    width: 40%;
+}
+
+.banner {
+    margin-bottom: 50px;
+}
+
+.banner img {
+    padding: 30px 0;
+}
+
+.group-info a,
+.half-width a {
+    text-decoration: none;
+    color: white;
+    background-color: orange;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.half-width {
+    width: 50%;
+    padding: 30px;
+}
+
+.quicklists {
+    display: flex;
+}
+
+.featurepics {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 10px;
+    row-gap: 10px;
+}
+
+.featurepics img {
+    width: 100%;
+}
+
+.quicklist {
+    display: flex;
+    align-items: center;
+}
+
+.quicklist p {
+    margin: 30px 0;
+}
+
+.box {
+    padding: 10px;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px;
+    margin-bottom: 5px;
+}
+
+.architect img {
+    width: 100%;
+}
+
+.featuretolove {
+    display: flex;
+}
+
+.facts {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.fact {
+    border: 2px solid rgb(219, 170, 9);
+    border-radius: 5px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 150px;
+    transition-property: border, font-weight, color;
+    transition-duration: 1s;
+}
+
+.fact:hover {
+    border: 2px solid rgb(94, 243, 8);
+    font-weight: bold;
+    color: rgb(20, 6, 224);
+}
+
+.fact h1 {
+    margin: 10px;
+}
+
+
+
+.sponsorslist {
+    padding: 50px 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+.sponsorslist img {
+    width: 100px;
+
+}
+
+.footer {
+    text-align: center;
+    padding: 30px;
+}
+
+.experience {
+    font-size: x-large;
+    font-weight: 900;
+}
+
+.floatingelement {
+    position: relative;
+    top: -30px;
+    left: -30px;
+
+}
+
+@media screen and (max-width:576px) {
+    .menubar {
+        flex-direction: column;
+    }
+
+    nav span {
+        display: flex;
+        flex-direction: column;
+        row-gap: 10px;
+    }
+
+    .featurepics {
+        grid-template-columns: repeat(1, 1fr);
+        row-gap: 10px;
+    }
+
+    .quicklists,
+    .featuretolove {
+        flex-direction: column;
+    }
+
+    .half-width {
+        width: 100%;
+    }
+
+    .facts,
+    .sponsorslist {
+        flex-direction: column;
+        gap: 30px;
+        align-items: center;
+    }
+
+    .floatingelement {
+        position: relative;
+        top: 00px;
+        left: 0px;
+
+
+    }
+
+}
